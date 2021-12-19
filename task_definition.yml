@@ -1,8 +1,14 @@
 Files to be delivered to user: 
   src/main/java/org/example/Task.java
 
+environment: Java
+  version: 11
+  other:
+    maven
+
 Task verification method:
   run mvn test goal
 
-Test class:
-  src/test/java/org/example/task/TaskTest.java
+Result file:
+  ./test_summary.txt
+
