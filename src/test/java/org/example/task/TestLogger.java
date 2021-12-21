@@ -43,7 +43,7 @@ public class TestLogger {
         results.forEach((key, value) -> {
             try {
                 Files.writeString(filePath,
-                        Instant.now() + "-" + key + ":" + value + "\n",
+                        Instant.now() + ";" + key + ";" + value + "\n",
                         StandardOpenOption.APPEND);
             } catch (IOException e) {
                 e.printStackTrace();
